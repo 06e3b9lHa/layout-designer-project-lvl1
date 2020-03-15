@@ -71,31 +71,29 @@ select {
 /* Сброс стилей Конец */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #303846;
   padding: 0;
   margin: 0;
 }
 
-header {
-  background: #ffffff;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .fixed {
   position: fixed;
   right: 0;
   left: 0;
+  background: #ffffff;
+  z-index: 10;
 }
 
-.header {
-  display: flex;
-  align-items: center;
+.header-fixed-panel {
+  height: 60px;
 }
 
 .header-logo {
@@ -132,14 +130,13 @@ header {
   font-weight: bold;
 }
 
-.first-section {
-  position: absolute;
-  top: 70px;
+.baner-section {
+  position: relative;
   width: 100%;
   height: auto;
   background: url(/images/banner.png) no-repeat;
   background-position: left center;
-  padding: 5% 0;
+  padding: 6% 0;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -147,12 +144,12 @@ header {
   align-items: center;
 }
 
-.first-section-logo img {
-  width: 200px;
+.baner-section-logo img {
+  width: 150px;
   height: auto;
 }
 
-.first-section-text {
+.baner-section-text {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
@@ -160,21 +157,82 @@ header {
   align-items: center;
 }
 
-.first-section-text h1 {
+.baner-section-text h1 {
   font-size: 40px;
 }
 
-.first-section-text p {
+.baner-section-text p {
   font-size: 18px;
 }
 
-.first-section-button .button {
+.baner-section-button .button {
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 5px 10px;
 }
 
-.first-section-button .button a {
+.baner-section-button .button a {
   color: #ffffff;
   text-decoration: none;
 }
+
+.main-content {
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-first-section {
+  padding: 5% 0;
+  width: 1000px;
+  margin: 15px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.main-first-section-item {
+  margin: 0 10px;
+}
+
+.main-first-section-item p {
+  margin-top: 10px;
+}
+
+.dark-section {
+  background: #f7f7f7;
+}
+
+.main-second-section {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.second-section-item {
+  width: 40%;
+  margin: 0 50px;
+}
+
+.item-text p {
+  margin-top: 10px;
+}
+
+.main-third-section {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.third-section-item {
+  width: 40%;
+  margin: 0 50px;
+}
+
+.item-img {
+  width: 350px;
+}
+
+
