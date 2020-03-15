@@ -1,7 +1,81 @@
+/* Сброс стилей начало */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Сброс стилей Конец */
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #303846;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -25,7 +99,7 @@ header {
 }
 
 .header-logo {
-  padding-left: 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
 }
@@ -58,5 +132,49 @@ header {
   font-weight: bold;
 }
 
+.first-section {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: auto;
+  background: url(/images/banner.png) no-repeat;
+  background-position: left center;
+  padding: 5% 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.first-section-logo img {
+  width: 200px;
+  height: auto;
+}
 
+.first-section-text {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section-text h1 {
+  font-size: 40px;
+}
+
+.first-section-text p {
+  font-size: 18px;
+}
+
+.first-section-button .button {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.first-section-button .button a {
+  color: #ffffff;
+  text-decoration: none;
+}
