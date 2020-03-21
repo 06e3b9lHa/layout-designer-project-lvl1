@@ -39,7 +39,7 @@
                     <p>Место, откуда не хочется улетать</p>
                 </div>
                 <div class="baner-section-button">
-                    <div class="button"><a href="#">Забронировать</a></div>
+                    <div class="button"><a href="#form-section">Забронировать</a></div>
                 </div>
             </div>
 
@@ -80,6 +80,53 @@
                     <h2>Места для отдыха</h2>
                     <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                     <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+                </div>
+            </section>
+
+            <section id="form-section" class="form-section dark-section">
+                <div class="form-center">
+                    <h2>Отправьте заявку сегодня!</h2>
+                    <form action="#">
+                        <fieldset class="select-group">
+                            <legend>Параметры квартиры</legend>
+                            <div class="select-group">
+                                <div class="select select-rooms">
+                                    <p>Количество комнат:</p>
+                                    <select name="rooms">
+                                        <option value="value1" selected>1</option>
+                                        <option value="value2">2</option>
+                                        <option value="value3">3</option>
+                                    </select>
+                                </div>
+                                <div class="select select-trim">
+                                    <p>Отделка:</p>
+                                    <select name="trim">
+                                        <option value="value1" selected>Без отделки</option>
+                                        <option value="value2">White box</option>
+                                        <option value="value3">Полная отделка</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset-input-group">
+                            <legend>Контактная информация:</legend>
+                            <div class="input-group">
+                                <div class="input-group-item">
+                                    <p>Имя:</p>
+                                    <input type="text">
+                                </div>
+                                <div class="input-group-item">
+                                    <p>Телефон:</p>
+                                    <input type="tel">
+                                </div>
+                                <div class="input-group-item">
+                                    <p>E-mail:</p>
+                                    <input type="email">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <input class="form-button" type="submit">
+                    </form>
                 </div>
             </section>
 

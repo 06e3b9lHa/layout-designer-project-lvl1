@@ -71,7 +71,7 @@ select {
 /* Сброс стилей Конец */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #303846;
   padding: 0;
@@ -235,4 +235,76 @@ body {
   width: 350px;
 }
 
+.form-section {
+  padding: 4% 0;
+}
 
+.form-section,
+.form-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  width: 500px;
+  padding: 25px 67px 20px 30px;
+  border-color: #0BD3AD;
+  margin-top: 25px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0BD3AD;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select select {
+  margin: 5px;
+  width: 145px;
+  padding: 5px 0 5px 15px;
+  border-radius: 10px;
+}
+
+.select p,
+.input-group-item p{
+  font-weight: 600;
+}
+
+.input-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+fieldset.fieldset-input-group {
+  padding-right: 30px;
+}
+
+.input-group-item {
+  margin-top: 10px;
+}
+
+.input-group-item input {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #B9B9B9;
+  padding: 5px 0 5px 15px;
+}
+
+.form-button {
+  margin-top: 30px;
+  border: 1px solid #0BD3AD;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: #0BD3AD;
+  font-weight: 600;
+  cursor: pointer;
+}
