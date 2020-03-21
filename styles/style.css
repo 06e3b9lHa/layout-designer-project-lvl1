@@ -71,7 +71,7 @@ select {
 /* Сброс стилей Конец */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #303846;
   padding: 0;
@@ -250,14 +250,14 @@ body {
 fieldset {
   width: 500px;
   padding: 25px 67px 20px 30px;
-  border-color: #0BD3AD;
+  border-color: #0bd3ad;
   margin-top: 25px;
 }
 
 legend {
   font-size: 20px;
   font-weight: bold;
-  color: #0BD3AD;
+  color: #0bd3ad;
 }
 
 .select {
@@ -274,7 +274,7 @@ legend {
 }
 
 .select p,
-.input-group-item p{
+.input-group-item p {
   font-weight: 600;
 }
 
@@ -295,16 +295,55 @@ fieldset.fieldset-input-group {
 .input-group-item input {
   height: 30px;
   border-radius: 10px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   padding: 5px 0 5px 15px;
 }
 
 .form-button {
   margin-top: 30px;
-  border: 1px solid #0BD3AD;
+  border: 1px solid #0bd3ad;
   border-radius: 10px;
   padding: 10px 40px;
-  color: #0BD3AD;
+  color: #0bd3ad;
   font-weight: 600;
   cursor: pointer;
 }
+
+footer {
+  padding: 5%;
+  background: #303846;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+img.footer-logo-img{
+  width: 45px;
+  height: auto;
+}
+
+.copyright {
+  margin-top: 15px;
+}
+
+.section-item-list span {
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+}
+
