@@ -130,9 +130,13 @@ body {
   font-weight: bold;
 }
 
+.banner,
+.form-center {
+  width: 1000px;
+}
+
 .baner-section {
   position: relative;
-  width: 100%;
   height: auto;
   background: url(/images/banner.png) no-repeat;
   background-position: left center;
@@ -176,13 +180,7 @@ body {
   text-decoration: none;
 }
 
-.main-content {
-  min-width: 1000px;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-first-section {
+.advantages {
   padding: 5% 0;
   width: 1000px;
   margin: 15px auto;
@@ -191,11 +189,11 @@ body {
   justify-content: space-evenly;
 }
 
-.main-first-section-item {
+.advantages-item {
   margin: 0 10px;
 }
 
-.main-first-section-item p {
+.advantages-item p {
   margin-top: 10px;
 }
 
@@ -203,14 +201,14 @@ body {
   background: #f7f7f7;
 }
 
-.main-second-section {
+.about-section {
   padding: 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.second-section-item {
+.about-section-item {
   width: 40%;
   margin: 0 50px;
 }
@@ -219,14 +217,14 @@ body {
   margin-top: 10px;
 }
 
-.main-third-section {
+.vacation-spots {
   padding: 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.third-section-item {
+.vacation-spots-item {
   width: 40%;
   margin: 0 50px;
 }
