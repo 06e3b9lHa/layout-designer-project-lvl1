@@ -71,11 +71,17 @@ select {
 /* Сброс стилей Конец */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #303846;
-  padding: 0;
-  margin: 0;
+}
+header {
+  position: relative;
+}
+
+.indent {
+  position: relative;
+  height: 60px;
 }
 
 .header {
@@ -130,17 +136,16 @@ body {
   font-weight: bold;
 }
 
-.banner,
-.form-center {
-  width: 1000px;
+.wrapper-landscape {
+  background: url(/images/banner.png) no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
-.baner-section {
-  position: relative;
-  height: auto;
-  background: url(/images/banner.png) no-repeat;
+.landscape-section {
+  width: 1000px;
   background-position: left center;
-  padding: 6% 0;
+  padding: 5% 0;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -148,12 +153,12 @@ body {
   align-items: center;
 }
 
-.baner-section-logo img {
+.landscape-section-logo img {
   width: 150px;
   height: auto;
 }
 
-.baner-section-text {
+.landscape-section-text {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
@@ -161,32 +166,43 @@ body {
   align-items: center;
 }
 
-.baner-section-text h1 {
+.landscape-section-text h1 {
   font-size: 40px;
 }
 
-.baner-section-text p {
+.landscape-section-text p {
   font-size: 18px;
 }
 
-.baner-section-button .button {
+.landscape-section-button .button {
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 5px 10px;
 }
 
-.baner-section-button .button a {
+.landscape-section-button .button a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.advantages {
-  padding: 5% 0;
+.advantages,
+.about-section,
+.vacation-spots,
+.form-section {
   width: 1000px;
+  padding: 5% 0;
   margin: 15px auto;
   display: flex;
   align-items: flex-start;
+}
+
+.advantages {
   justify-content: space-evenly;
+}
+
+.about-section,
+.vacation-spots {
+  justify-content: center;
 }
 
 .advantages-item {
@@ -197,48 +213,27 @@ body {
   margin-top: 10px;
 }
 
-.dark-section {
+.wrapper-dark{
   background: #f7f7f7;
-}
-
-.about-section {
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.about-section-item {
-  width: 40%;
-  margin: 0 50px;
 }
 
 .item-text p {
   margin-top: 10px;
 }
 
-.vacation-spots {
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.vacation-spots-item {
+.vacation-spots-item,
+.about-section-item {
   width: 40%;
-  margin: 0 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.item-img {
-  width: 350px;
+.item-img img{
+  width: 500px;
 }
 
-.form-section {
-  padding: 4% 0;
-}
-
-.form-section,
 .form-center {
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,7 +320,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-img.footer-logo-img{
+img.footer-logo-img {
   width: 45px;
   height: auto;
 }
@@ -344,4 +339,3 @@ img.footer-logo-img{
   display: flex;
   align-items: center;
 }
-
