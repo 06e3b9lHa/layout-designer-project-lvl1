@@ -48,7 +48,7 @@ img {
   display: block;
 }
 
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -75,9 +75,6 @@ body {
   font-size: 16px;
   color: #303846;
 }
-header {
-  position: relative;
-}
 
 .indent {
   position: relative;
@@ -85,32 +82,39 @@ header {
 }
 
 .header {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffff;
 }
 
-.fixed {
+.fixed-header {
   position: fixed;
   right: 0;
   left: 0;
-  background: #ffffff;
   z-index: 10;
-}
-
-.header-fixed-panel {
-  height: 60px;
 }
 
 .header-logo {
   padding: 10px 20px;
+}
+
+.d-flex-center {
   display: flex;
   align-items: center;
 }
 
-.header-logo-img img {
+.w-45 {
   width: 45px;
+}
+
+.h-auto {
   height: auto;
+}
+
+.w-150 {
+  width: 150px;
 }
 
 .header-logo-text {
@@ -120,8 +124,6 @@ header {
 
 .header-nav-list {
   padding-right: 20px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -147,23 +149,13 @@ header {
   background-position: left center;
   padding: 5% 0;
   color: #ffffff;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.landscape-section-logo img {
-  width: 150px;
-  height: auto;
 }
 
 .landscape-section-text {
   margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .landscape-section-text h1 {
@@ -174,15 +166,21 @@ header {
   font-size: 18px;
 }
 
-.landscape-section-button .button {
+.btn {
+  display: inline-block;
   border: 1px solid #ffffff;
+  display: inline-block;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.landscape-section-button .button a {
-  color: #ffffff;
+.btn a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .advantages,
@@ -213,7 +211,7 @@ header {
   margin-top: 10px;
 }
 
-.wrapper-dark{
+.wrapper-gray {
   background: #f7f7f7;
 }
 
@@ -228,16 +226,16 @@ header {
   margin-right: auto;
 }
 
-.item-img img{
+.item-img img {
   width: 500px;
 }
 
 .form-center {
   padding: 5% 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 fieldset {
@@ -254,8 +252,6 @@ legend {
 }
 
 .select {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -294,15 +290,11 @@ fieldset.fieldset-input-group {
 
 .form-button {
   margin-top: 30px;
-  border: 1px solid #0bd3ad;
-  border-radius: 10px;
-  padding: 10px 40px;
+  border-color: #0bd3ad;
   color: #0bd3ad;
-  font-weight: 600;
-  cursor: pointer;
 }
 
-footer {
+.page-footer {
   padding: 5%;
   background: #303846;
   display: flex;
@@ -311,18 +303,13 @@ footer {
   color: #ffffff;
 }
 
-footer a {
+.page-footer a {
   color: #ffffff;
   text-decoration: none;
 }
 
-footer a:hover {
+.page-footer a:hover {
   text-decoration: underline;
-}
-
-img.footer-logo-img {
-  width: 45px;
-  height: auto;
 }
 
 .copyright {

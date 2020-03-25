@@ -14,13 +14,13 @@
 
     <header>
 
-        <div class="header header-fixed-panel fixed">
-            <div class="header-logo">
-                <div class="header-logo-img"><img src="/images/logo.svg" alt="ЖК Лунное море"></div>
+        <div class="header fixed-header">
+            <div class="header-logo d-flex-center">
+                <div class="w-45 h-auto"><img src="/images/logo.svg" alt="ЖК Лунное море"></div>
                 <div class="header-logo-text">Лунное море</div>
             </div>
             <nav class="header-nav">
-                <ul class="header-nav-list">
+                <ul class="header-nav-list d-flex-center">
                     <li><a href="#advantages">Преимущества</a></li>
                     <li><a href="#about">О ЖК</a></li>
                     <li><a href="#vacation-spots">Места для отдыха</a></li>
@@ -34,53 +34,52 @@
 
     <main>
 
-        <section>
+        <section class="wrapper-landscape">
 
-            <div class="wrapper-landscape">
-                <div class="landscape-section">
-                    <div class="landscape-section-logo">
-                        <img src="/images/logo.svg" alt="ЖК Лунное море">
-                    </div>
-                    <div class="landscape-section-text">
-                        <h1>ЖК «Лунное море»</h1>
-                        <p>Место, откуда не хочется улетать</p>
-                    </div>
-                    <div class="landscape-section-button">
-                        <div class="button"><a href="#form-section">Забронировать</a></div>
-                    </div>
+            <div class="landscape-section d-flex-center">
+
+                <img class="w-150 h-auto" src="/images/logo.svg" alt="ЖК Лунное море">
+
+                <div class="landscape-section-text">
+                    <h1>ЖК «Лунное море»</h1>
+                    <p>Место, откуда не хочется улетать</p>
+                </div>
+                <div class="btn">
+                    <div class="button btn-white"><a href="#form-section">Забронировать</a></div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="advantages">
+
+            <div  class="advantages">
+                <div class="advantages-item">
+                    <h2>Уникальный вид</h2>
+                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+                </div>
+                <div class="advantages-item">
+                    <h2>Инфраструктура</h2>
+                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+                </div>
+                <div class="advantages-item">
+                    <h2>Близость к Москве</h2>
+                    <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                 </div>
             </div>
 
         </section>
 
-        <section id="advantages" class="advantages">
+        <section id="about" class="wrapper-gray">
 
-            <div class="advantages-item">
-                <h2>Уникальный вид</h2>
-                <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-            </div>
-            <div class="advantages-item">
-                <h2>Инфраструктура</h2>
-                <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-            </div>
-            <div class="advantages-item">
-                <h2>Близость к Москве</h2>
-                <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
-            </div>
-
-        </section>
-
-        <section id="about">
-
-            <div class="wrapper-dark">
-                <div class="about-section">
-                    <div class="about-section-item item-text">
-                        <h2>О ЖК «Лунное море»</h2>
-                        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
-                        <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
-                    </div>
-                    <div class="about-section-item item-img"><img src="/images/moon-1.jpg" alt="О ЖК Лунное море"></div>
+            <div class="about-section">
+                <div class="about-section-item item-text">
+                    <h2>О ЖК «Лунное море»</h2>
+                    <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+                    <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
+                <div class="about-section-item item-img"><img src="/images/moon-1.jpg" alt="О ЖК Лунное море"></div>
             </div>
 
         </section>
@@ -97,68 +96,64 @@
 
         </section>
 
-        <section id="form-section">
+        <section id="form-section" class="wrapper-gray">
 
-            <div class="wrapper-dark">
-                <div class="form-center">
-                    <h2>Отправьте заявку сегодня!</h2>
-                    <form action="#">
-                        <fieldset class="select-group">
-                            <legend>Параметры квартиры</legend>
-                            <div class="select-group">
-                                <div class="select select-rooms">
-                                    <p>Количество комнат:</p>
-                                    <select name="rooms">
-                                        <option value="value1" selected>1</option>
-                                        <option value="value2">2</option>
-                                        <option value="value3">3</option>
-                                    </select>
-                                </div>
-                                <div class="select select-trim">
-                                    <p>Отделка:</p>
-                                    <select name="trim">
-                                        <option value="value1" selected>Без отделки</option>
-                                        <option value="value2">White box</option>
-                                        <option value="value3">Полная отделка</option>
-                                    </select>
-                                </div>
+            <div class="form-center">
+                <h2>Отправьте заявку сегодня!</h2>
+                <form action="#">
+                    <fieldset class="select-group">
+                        <legend>Параметры квартиры</legend>
+                        <div class="select-group">
+                            <div class="select select-rooms d-flex-center">
+                                <p>Количество комнат:</p>
+                                <select name="rooms">
+                                    <option value="value1" selected>1</option>
+                                    <option value="value2">2</option>
+                                    <option value="value3">3</option>
+                                </select>
                             </div>
-                        </fieldset>
-                        <fieldset class="fieldset-input-group">
-                            <legend>Контактная информация:</legend>
-                            <div class="input-group">
-                                <div class="input-group-item">
-                                    <p>Имя:</p>
-                                    <input type="text">
-                                </div>
-                                <div class="input-group-item">
-                                    <p>Телефон:</p>
-                                    <input type="tel">
-                                </div>
-                                <div class="input-group-item">
-                                    <p>E-mail:</p>
-                                    <input type="email">
-                                </div>
+                            <div class="select select-trim d-flex-center">
+                                <p>Отделка:</p>
+                                <select name="trim">
+                                    <option value="value1" selected>Без отделки</option>
+                                    <option value="value2">White box</option>
+                                    <option value="value3">Полная отделка</option>
+                                </select>
                             </div>
-                        </fieldset>
-                        <input class="form-button" type="submit">
-                    </form>
-                </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-input-group">
+                        <legend>Контактная информация:</legend>
+                        <div class="input-group">
+                            <div class="input-group-item">
+                                <p>Имя:</p>
+                                <input type="text">
+                            </div>
+                            <div class="input-group-item">
+                                <p>Телефон:</p>
+                                <input type="tel">
+                            </div>
+                            <div class="input-group-item d-flex-center">
+                                <p>E-mail:</p>
+                                <input type="email">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input class="btn form-button" type="submit">
+                </form>
             </div>
-
-
 
         </section>
 
     </main>
 
 
-    <footer>
+    <footer class="page-footer">
 
         <div class="footer-section-item">
 
             <div class="section-item-list logo-item">
-                <img class="footer-logo-img" src="/images/logo.svg" alt="Логотип"> <span>Лунное море</span>
+                <img class="w-45 h-auto" src="/images/logo.svg" alt="Логотип"> <span>Лунное море</span>
             </div>
             <div class="section-item-list copyright">
                 &copy; 2032 год
