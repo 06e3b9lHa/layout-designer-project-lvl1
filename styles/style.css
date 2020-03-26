@@ -76,12 +76,17 @@ body {
   color: #303846;
 }
 
+h2 {
+	margin-bottom: 10px;
+}
+
 .indent {
   position: relative;
   height: 60px;
 }
 
 .header {
+	padding: 0 20px;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -94,10 +99,6 @@ body {
   right: 0;
   left: 0;
   z-index: 10;
-}
-
-.header-logo {
-  padding: 10px 20px;
 }
 
 .d-flex-center {
@@ -115,6 +116,14 @@ body {
 
 .w-150 {
   width: 150px;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-center {
+	justify-content: center;
 }
 
 .header-logo-text {
@@ -139,31 +148,29 @@ body {
 }
 
 .wrapper-landscape {
-  background: url(/images/banner.png) no-repeat;
+  background: url(/images/banner.png) no-repeat center;
   display: flex;
-  justify-content: center;
 }
 
 .landscape-section {
   width: 1000px;
   background-position: left center;
-  padding: 5% 0;
+  padding: 35px 0;
   color: #ffffff;
   flex-direction: column;
-  justify-content: center;
 }
 
-.landscape-section-text {
-  margin: 20px 0;
-  text-align: center;
+.landscape-section > * {
+	margin-top: 20px;
+	text-align: center;
 }
 
-.landscape-section-text h1 {
+.landscape-section > h1 {
   font-size: 40px;
 }
 
-.landscape-section-text p {
-  font-size: 18px;
+.landscape-section > p {
+  font-size: 20px;
 }
 
 .btn {
@@ -183,10 +190,7 @@ body {
   color: #ffffff;
 }
 
-.advantages,
-.about-section,
-.vacation-spots,
-.form-section {
+.container {
   width: 1000px;
   padding: 5% 0;
   margin: 15px auto;
@@ -194,33 +198,15 @@ body {
   align-items: flex-start;
 }
 
-.advantages {
-  justify-content: space-evenly;
-}
-
-.about-section,
-.vacation-spots {
-  justify-content: center;
-}
-
 .advantages-item {
   margin: 0 10px;
 }
 
-.advantages-item p {
-  margin-top: 10px;
-}
-
-.wrapper-gray {
+.bg-gray {
   background: #f7f7f7;
 }
 
-.item-text p {
-  margin-top: 10px;
-}
-
-.vacation-spots-item,
-.about-section-item {
+.container-item {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -304,6 +290,7 @@ fieldset.fieldset-input-group {
 }
 
 .page-footer a {
+	width: 1000px;
   color: #ffffff;
   text-decoration: none;
 }
