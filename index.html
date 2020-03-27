@@ -34,14 +34,16 @@
 
     <main>
 
-        <section class="wrapper-landscape justify-content-center">
+        <section class="wrapper-landscape">
 
-            <div class="landscape-section d-flex-center justify-content-center">
-                <img class="w-150 h-auto" src="/images/logo.svg" alt="ЖК Лунное море">
-								<h1>ЖК «Лунное море»</h1>
-								<p>Место, откуда не хочется улетать</p>
-                <div class="btn btn-white"><a href="#form-section">Забронировать</a></div>
-            </div>
+					<div class="container">
+						<div class="landscape-section d-flex-center">
+							<img class="w-150 h-auto" src="/images/logo.svg" alt="ЖК Лунное море">
+							<h1>ЖК «Лунное море»</h1>
+							<p>Место, откуда не хочется улетать</p>
+							<div class="btn btn-white"><a href="#form-section">Забронировать</a></div>
+						</div>
+					</div>
 
         </section>
 
@@ -72,7 +74,7 @@
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
                     <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
-                <div class="container-item item-img"><img src="/images/moon-1.jpg" alt="О ЖК Лунное море"></div>
+                <img class="container-item" src="/images/moon-1.jpg" alt="О ЖК Лунное море">
             </div>
 
         </section>
@@ -80,7 +82,7 @@
         <section id="vacation-spots">
 
 					<div class="container justify-content-center">
-						<div class="container-item"><img src="/images/moon-2.jpg" alt="Космонавт"></div>
+						<img class="container-item" src="/images/moon-2.jpg" alt="Космонавт">
             <div class="container-item">
 							<h2>Места для отдыха</h2>
                 <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
@@ -95,7 +97,8 @@
             <div class="container form-center">
                 <h2>Отправьте заявку сегодня!</h2>
                 <form action="#">
-                    <fieldset class="select-group">
+
+                    <fieldset class="main-form-fieldset">
                         <legend>Параметры квартиры</legend>
                         <div class="select-group">
                             <div class="select select-rooms d-flex-center">
@@ -115,8 +118,9 @@
                                 </select>
                             </div>
                         </div>
-                    </fieldset>
-                    <fieldset class="fieldset-input-group">
+										</fieldset>
+
+                    <fieldset class="main-form-fieldset fieldset-input-group">
                         <legend>Контактная информация:</legend>
                         <div class="input-group">
                             <div class="input-group-item">
@@ -132,8 +136,10 @@
                                 <input type="email">
                             </div>
                         </div>
-                    </fieldset>
-                    <input class="btn form-button" type="submit" value="Отправить">
+										</fieldset>
+
+										<input class="btn form-button" type="submit" value="Отправить">
+
                 </form>
             </div>
 
@@ -144,38 +150,37 @@
 
     <footer class="page-footer">
 
-        <div class="footer-section-item">
+			<div class="footer-container">
+				<div class="footer-section-item">
+					<div class="section-item-list logo-item">
+							<img class="w-45 h-auto" src="/images/logo.svg" alt="Логотип"> <span>Лунное море</span>
+					</div>
+					<div class="section-item-list copyright">
+							&copy; 2032 год
+					</div>
+				</div>
 
-            <div class="section-item-list logo-item">
-                <img class="w-45 h-auto" src="/images/logo.svg" alt="Логотип"> <span>Лунное море</span>
-            </div>
-            <div class="section-item-list copyright">
-                &copy; 2032 год
-            </div>
-
-        </div>
         <div class="footer-item">
+					<div class="section-item-list">
+							<h3>Проектная документация</h3>
+							<ul>
+									<li><a href="#">Скачать</a></li>
+									<li><a href="#">Посмотреть на сайте</a></li>
+							</ul>
+					</div>
+				</div>
 
-            <div class="section-item-list">
-                <h3>Проектная документация</h3>
-                <ul>
-                    <li><a href="#">Скачать</a></li>
-                    <li><a href="#">Посмотреть на сайте</a></li>
-                </ul>
-            </div>
-
-        </div>
         <div class="footer-item">
-
-            <div class="section-item-list">
-                <h3>О застройщике</h3>
-                <ul>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Сайт компании</a></li>
-                </ul>
-            </div>
-
+					<div class="section-item-list">
+							<h3>О застройщике</h3>
+							<ul>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Сайт компании</a></li>
+							</ul>
+					</div>
         </div>
+			</div>
+
 
     </footer>
 

@@ -76,12 +76,15 @@ body {
   color: #303846;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 h2 {
 	margin-bottom: 10px;
 }
 
 .indent {
-  position: relative;
   height: 60px;
 }
 
@@ -149,7 +152,8 @@ h2 {
 
 .wrapper-landscape {
   background: url(/images/banner.png) no-repeat center;
-  display: flex;
+	display: flex;
+	justify-content: center;
 }
 
 .landscape-section {
@@ -165,10 +169,6 @@ h2 {
 	text-align: center;
 }
 
-.landscape-section > h1 {
-  font-size: 40px;
-}
-
 .landscape-section > p {
   font-size: 20px;
 }
@@ -176,7 +176,6 @@ h2 {
 .btn {
   display: inline-block;
   border: 1px solid #ffffff;
-  display: inline-block;
   border-radius: 10px;
   padding: 10px 15px;
   text-decoration: none;
@@ -199,6 +198,7 @@ h2 {
 }
 
 .advantages-item {
+	width: 30%;
   margin: 0 10px;
 }
 
@@ -212,19 +212,13 @@ h2 {
   margin-right: auto;
 }
 
-.item-img img {
-  width: 500px;
-}
-
 .form-center {
   padding: 5% 0;
-  display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
-fieldset {
+fieldset.main-form-fieldset {
   width: 500px;
   padding: 25px 67px 20px 30px;
   border-color: #0bd3ad;
@@ -277,20 +271,25 @@ fieldset.fieldset-input-group {
 .form-button {
   margin-top: 30px;
   border-color: #0bd3ad;
-  color: #0bd3ad;
+	color: #0bd3ad;
+	background: none;
 }
 
 .page-footer {
   padding: 5%;
   background: #303846;
-  display: flex;
+}
+
+.footer-container {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #ffffff;
 }
 
 .page-footer a {
-	width: 1000px;
   color: #ffffff;
   text-decoration: none;
 }
