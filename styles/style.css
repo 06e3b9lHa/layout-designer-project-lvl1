@@ -84,6 +84,10 @@ h2 {
 	margin-bottom: 10px;
 }
 
+.color-white {
+  color: #ffffff;
+}
+
 .indent {
   height: 60px;
 }
@@ -104,9 +108,24 @@ h2 {
   z-index: 10;
 }
 
-.d-flex-center {
-  display: flex;
-  align-items: center;
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-x-10 {
+  margin: 0 10px;
+}
+
+.m-x-auto {
+  margin: 0 auto;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
 }
 
 .w-45 {
@@ -161,7 +180,6 @@ h2 {
   background-position: left center;
   padding: 35px 0;
   color: #ffffff;
-  flex-direction: column;
 }
 
 .landscape-section > * {
@@ -197,25 +215,17 @@ h2 {
   align-items: flex-start;
 }
 
-.advantages-item {
-	width: 30%;
-  margin: 0 10px;
+.d-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-d-col {
+  flex-direction: column;
 }
 
 .bg-gray {
   background: #f7f7f7;
-}
-
-.container-item {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-center {
-  padding: 5% 0;
-  align-items: center;
-  flex-direction: column;
 }
 
 fieldset.main-form-fieldset {
@@ -231,18 +241,18 @@ legend {
   color: #0bd3ad;
 }
 
-.select {
+.space-between {
   justify-content: space-between;
 }
 
-.select select {
+.select-group select {
   margin: 5px;
   width: 145px;
   padding: 5px 0 5px 15px;
   border-radius: 10px;
 }
 
-.select p,
+.select-group p,
 .input-group-item p {
   font-weight: 600;
 }
@@ -280,15 +290,6 @@ fieldset.fieldset-input-group {
   background: #303846;
 }
 
-.footer-container {
-	width: 1000px;
-	margin: 0 auto;
-	display: flex;
-  align-items: start;
-  justify-content: space-between;
-  color: #ffffff;
-}
-
 .page-footer a {
   color: #ffffff;
   text-decoration: none;
@@ -298,17 +299,8 @@ fieldset.fieldset-input-group {
   text-decoration: underline;
 }
 
-.copyright {
-  margin-top: 15px;
-}
-
 .section-item-list span {
   font-size: 19px;
   font-weight: 600;
   margin-left: 15px;
-}
-
-.logo-item {
-  display: flex;
-  align-items: center;
 }
