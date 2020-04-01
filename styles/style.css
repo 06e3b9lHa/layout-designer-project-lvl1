@@ -48,7 +48,7 @@ img {
   display: block;
 }
 
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 
@@ -71,7 +71,7 @@ select {
 /* Сброс стилей Конец */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #303846;
 }
@@ -81,7 +81,11 @@ h1 {
 }
 
 h2 {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+:root {
+  --header-indent: 60px;
 }
 
 .color-white {
@@ -89,12 +93,12 @@ h2 {
 }
 
 .indent {
-  height: 60px;
+  height: var(--header-indent);
 }
 
 .header {
-	padding: 0 20px;
-  height: 60px;
+  padding: 0 20px;
+  height: var(--header-indent);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +149,7 @@ h2 {
 }
 
 .justify-content-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .header-logo-text {
@@ -171,8 +175,8 @@ h2 {
 
 .wrapper-landscape {
   background: url(/images/banner.png) no-repeat center;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .landscape-section {
@@ -183,8 +187,8 @@ h2 {
 }
 
 .landscape-section > * {
-	margin-top: 20px;
-	text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .landscape-section > p {
@@ -209,8 +213,8 @@ h2 {
 
 .container {
   width: 1000px;
-  padding: 5% 0;
-  margin: 15px auto;
+  padding: 60px 0;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
 }
@@ -281,12 +285,11 @@ fieldset.fieldset-input-group {
 .form-button {
   margin-top: 30px;
   border-color: #0bd3ad;
-	color: #0bd3ad;
-	background: none;
+  color: #0bd3ad;
+  background: none;
 }
 
 .page-footer {
-  padding: 5%;
   background: #303846;
 }
 
